@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Currículo de Programador</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(20, 1, 24);
+        }
+
+        .banner {
+            position: relative;
+            /*para que os elementos filhos possam ser posicionados de forma absoluta*/
+            display: flex;
+            /*para que os elementos filhos sejam exibidos em linha*/
+            justify-content: flex-start;
+            /*alinha os elementos filhos à esquerda*/
+            align-items: center;
+            /*alinha os elementos filhos verticalmente*/
+            height: 30vw;
+            /*altura do banner*/
+
+            background: linear-gradient(to right, #23003d, #8b00c1);
+            text-align: center;
+            /*alinha o texto ao centro*/
+            color: rgb(255, 255, 255);
+            ;
+            /*distancia da margem esquerda*/
+        }
+
+        .banner img {
+            position: absolute;
+            left: 0%;
+            padding: 1%;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+
+
+        .molde {
+            position: relative;
+            left: 100px;
+            /*distancia da margem esquerda*/
+            width: 17.5vw;
+            /*largura da foto*/
+            height: 23.2vw;
+            /*altura da foto*/
+            border-radius: 20px;
+            /*arredondamento dos cantos da foto*/
+            background-image: linear-gradient(144deg, #ffa040, #ff0000 50%, #f58e1f);
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 30%;
+            right: 60px;
+            width: 70%;
+            height: relative;
+            padding: 20px;
+            border-radius: 50px;
+            background: #5d00a479;
+
+        }
+
+        .banner h1 {
+            margin: 0;
+            font-size: 5.3em;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .contact-info a {
+            color: #dda0dd;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 3%;
+        }
+
+
+        @media screen and (max-width: 1335px) {
+            .banner {
+                height: 40vw;
+            }
+
+            .banner-content {
+                top: 20%;
+                right: 40px;
+                width: 60%;
+                height: relative;
+                padding: 10px;
+                border-radius: 50px;
+                background: #5d00a479;
+            }
+
+            .molde {
+                width: 23.2vw;
+                height: 30.7vw;
+            }
+
+        }
+
+        @media screen and (max-width: 1008px) {
+
+            .banner h1 {
+                margin: 0;
+                font-size: 4em;
+            }
+
+        }
+
+        @media screen and (max-width: 770px) {
+            .banner {
+                height: 55vw;
+            }
+
+            .banner-content {
+                top: 10%;
+            }
+
+            .molde {
+                left: 5%;
+                width: 25.2vw;
+                height: 33.3vw;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+
+            .banner h1 {
+                margin: 0;
+                font-size: 3em;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .banner h1 {
+                margin: 0;
+                font-size: 2.6em;
+            }
+
+            .contact-info {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 426px) {
+
+            .banner h1 {
+                margin: 0;
+                font-size: 2.3em;
+            }
+
+            .contact-info {
+                font-size: 0.7em;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .banner {
+                height: 140vw;
+            }
+
+            .banner-content {
+                top: 5%;
+                right: 0px;
+                width: 100%;
+                height: relative;
+                padding: 10px;
+                border-radius: 50px;
+                background: #5d00a479;
+            }
+
+            .molde {
+                top: 20%;
+                position: relative;
+                left: 20%;
+                width: 60%;
+                height: 57%;
+            }
+
+            .banner h1 {
+                margin: 0;
+                font-size: 2em;
+            }
+
+            .contact-info {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="molde">
+            <img src="desenvweb/assets/img/20240509_101836.jpg">
+        </div>
+        <div class="banner-content">
+
+            <h1>João Luiz Rodighero Teló</h1>
+
+            <div class="contact-info">
+
+                <u style="color: #ffffff;"><a href="">(66)99942-0558</a>
+                    <a href="">joaoluiztelo7@gmail.com</a>
+                    <a href="https://github.com/J4O0Z">GitHub</a></u>
+
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-3  d-flex justify-content-center mb-5">
+            <div class="card border-light mb-3"
+                style="max-width: 18rem; color: #ffffff; background-color: #11001d; min-height: 300px;">
+
+                <div class="card-header" style="font-size:2em;">Informações pessoais</div>
+                <div class="card-body d-flex align-items-center justify-content-center">
+
+                    <p class="card-text">
+                    <p style="color: rgb(144, 73, 210); font-size: 1.5em;">
+                        -19 anos;<br>
+                        -Masculino;<br>
+                        -Solteiro;<br>
+                        -R. Guanabara-1400, Sinop-MT;<br>
+                        -Inglês avançado;</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex justify-content-center mb-5">
+            <div class="card border-light mb-3" style="max-width: 18rem; color: #ffffff; background-color: #11001d;">
+                <div class="card-header" style="font-size: 2em;">Experiências acadêmicas</div>
+                <div class="card-body d-flex align-items-center justify-content-center">
+                    <p class="card-text">
+                    <p style="color: rgb(144, 73, 210); font-size: 1.5em;">
+                        -Ensino médio completo;<br>
+                        -Cursando Sistemas de Informação na UNEMAT - 3/9;<br>
+                        -4 anos de inglês na Wizard;</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3  d-flex justify-content-center mb-5">
+            <div class="card border-light mb-3 " style="max-width: 18rem; color: #ffffff; background-color: #11001d;">
+                <div class="card-header" style="font-size: 2em;">Cursos</div>
+                <div class="card-body d-flex align-items-center justify-content-center">
+                    <p class="card-text">
+
+                    <p style="color: rgb(144, 73, 210); font-size: 1.5em;">
+                        -4 anos de inglês na Wizard;<br>
+                        -Introdução à impressão 3D pelo Senac;<br>
+                        -Curso CPA20 pela Top Invest (em andamento);</p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
